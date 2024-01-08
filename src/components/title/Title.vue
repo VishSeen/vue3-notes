@@ -7,7 +7,7 @@ const props = defineProps<TitleProps>();
 </script>
 
 <template>
-    <div class="title-logo">
+    <div class="title">
         <a :href="props.link" v-if="props.link">
             <span>
                 {{ props.name }}

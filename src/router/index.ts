@@ -8,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: TasksView
     },
     {
       path: '/about',
@@ -19,10 +19,15 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-        path: '/tasks',
-        name: 'tasks',
-        component: () => import('../views/TasksView.vue')
-    }
+        path: '/home',
+        name: 'home',
+        component: () => import('../views/HomeView.vue')
+    },
+    {
+      path: '/tasks',
+      name: 'tasks',
+      component: TasksView
+    },
   ]
 })
 
